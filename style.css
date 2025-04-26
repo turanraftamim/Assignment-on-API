@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef2f3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #4f46e5;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Search Section */
+.search-section {
+  background: #f9fafb;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.search-section input {
+  padding: 0.7rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-section button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: background 0.3s;
+}
+
+.search-section button:hover {
+  background: #4338ca;
+}
+
+/* Grid */
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Card */
+.country-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+}
+
+.country-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.country-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.country-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.more-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  background: #4338ca;
+}
+
+/* Footer */
+.footer {
+  background: #4f46e5;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  width: 100%;
+}
